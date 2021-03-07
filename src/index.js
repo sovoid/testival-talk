@@ -1,17 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Deck } from "spectacle";
+
+import {
+  FrameworkComparisionSlides,
+  IntroSlides,
+  SpeakerSlides,
+  WDIOAtWMFSlides,
+} from "./slides";
+import template from "./utils/template";
+import theme from "./utils/theme";
+
+const App = () => (
+  <Deck theme={theme} template={template}>
+    <IntroSlides />
+    <SpeakerSlides />
+    <WDIOAtWMFSlides />
+    <FrameworkComparisionSlides />
+  </Deck>
+);
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

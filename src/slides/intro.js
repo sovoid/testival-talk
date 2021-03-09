@@ -13,8 +13,8 @@ const ImageBox = ({ src }) => (
 const IntroSlidesFragment = () => (
   <>
     <Slide>
-      <Heading fontSize="h1">State of automated testing in Javascript</Heading>
-      <FlexBox justifyContent="center" alignItems="center">
+      <Heading fontSize="h2">State of automated testing in Javascript</Heading>
+      <FlexBox justifyContent="center" alignItems="center" height="100%">
         <ImageBox src={cypressLogo} />
         <ImageBox src={jestPuppeteerLogo} />
         <ImageBox src={wdioLogo} />

@@ -10,27 +10,27 @@ const UpgradeWDIOChart = () => {
     // default node
     {
       id: "2",
-      data: { label: "Estimate total effort" },
+      data: { label: "Estimate effort" },
       position: { x: 500, y: 100 },
     },
     {
       id: "3",
-      data: { label: "Compute Source Lines of Code" },
+      data: { label: "Compute SLOC" },
       position: { x: 250, y: 175 },
     },
     {
       id: "4",
-      data: { label: "Compute Number of Tests" },
+      data: { label: "Compute # Tests" },
       position: { x: 750, y: 175 },
     },
     {
       id: "5",
-      data: { label: "Pick a repository" },
+      data: { label: "Pick repository" },
       position: { x: 500, y: 275 },
     },
     {
       id: "6",
-      data: { label: "Remove all old packages" },
+      data: { label: "Remove old packages" },
       position: { x: 250, y: 350 },
     },
     {
@@ -45,7 +45,7 @@ const UpgradeWDIOChart = () => {
     },
     {
       id: "9",
-      data: { label: "Figure fractures in wdio.conf.js or the code itself" },
+      data: { label: "Fix failures" },
       position: { x: 750, y: 350 },
     },
     // animated edge
